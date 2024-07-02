@@ -9,48 +9,52 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js  "></script>
 
 </head>
-
-<body id="home">
+<body>
     <header>
-        <div id="birds">
-            <script>
-            window.addEventListener("DOMContentLoaded", () => {
-                VANTA.BIRDS({
-                    el: "#birds",
-                    mouseControls: true,
-                    forceAnimate: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 500.00,
-                    minWidth: 200.00,
-                    scale: 1.00,
-                    scaleMobile: 1.00,
-                    backgroundColor: 0xffffff
+        <section id="home">
+            <div id="birds">
+                <script>
+                window.addEventListener("DOMContentLoaded", () => {
+                    VANTA.BIRDS({
+                        el: "#birds",
+                        mouseControls: true,
+                        forceAnimate: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 500.00,
+                        minWidth: 200.00,
+                        scale: 1.00,
+                        scaleMobile: 1.00,
+                        backgroundColor: 0xffffff
+                    })
                 })
-            })
-            </script>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/alistair-place-544980310/"><img src="res/linkedIn.png"></a>
-            <a href="https://github.com/domozzzz"><img src="res/github.png"></a>
-            <h1>Alistair Place</h1>
-            <h2>Computer Programmer</h2>
+                </script>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/alistair-place-544980310/"><img src="res/linkedIn.png"></a>
+                <a href="https://github.com/domozzzz"><img src="res/github.png"></a>
+            <div id="title">
+                <h1>Alistair Place</h1>
+                <h4>Computer Programmer</h4>
+            </div>
+        </section>
     </header>
     <nav>
-        <ul id="navbar">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#technical">Technical Skills</a></li>
-            <li><a href="#professional">Professional Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+            <ul id="navbar">
+                <li class="home active"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="technical"><a href="#technical">Technical Skills</a></li>
+                <li class="professional"><a href="#professional">Professional Skills</a></li>
+                <li class="projects"><a href="#projects">Projects</a></li>
+            </ul>
+
     </nav>
-    <span>
+    <section id="about">
         <div class="margin">
-            <div id="about" class="row">
+            <div class="row">
                 <div class="column">
                     <h2>About</h2>
-                    <p>I am looking to start work as a graduate developer in February 2025 upon graduating. 
+                    <p>I am looking to start work as a graduate developer in December 2024 upon graduating. 
                         I am passionate about computers, especially developing interactive programs and streamlining user experiences.
                     </p>
                 </div>
@@ -66,10 +70,10 @@
                 </div>
             </div>
         </div>
-    </span>
-    <span>
+    </section>
+    <section id="technical">
         <div class="black">
-            <h2 id="technical">Technical Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="margin">
                 <progress value="90" max="100"></progress>Java</p>
                 <progress value="80" max="100"></progress>Python</p>
@@ -79,10 +83,10 @@
                 <progress value="50" max="100"></progress>Databases: MySQL</p>
             </div>
         </div>
-    </span>
-    <span>
+    </section>
+    <section id="professional">
         <div class="white">
-            <h2 id="professional">Professional Skills</h2>
+            <h2>Professional Skills</h2>
             <div class="margin">
                 <ul>
                     <li><h3>Quick learner</h3><p>I am able to pick up new skills while woring on task, learning by practicing, demonstrated in projects I have completed myself.</p></li>
@@ -92,25 +96,25 @@
                 </ul>
             </div>
         </div>
-    </span>
-    <span>
+    </section>
+    <section id="projects">
         <div class="black">
-        <div class="margin">
-            <h2 id="projects" class>Projects</h2>
+        <h2>Projects</h2>
+            <div class="margin">
                 <div class="row">
-                    <div class="column">
+                    <div class="imgColumn">
                         <img class="image" src="res/LittleManGame.png" style="width:100%"></a>
                         <div class="middle">
                             <a href="https://github.com/domozzzz/Little-Man-Game"><div class="text">Little Man Game</div></a>
                         </div>
                     </div>  
-                    <div class="column">
+                    <div class="imgColumn">
                         <img class="image" src="res/isometric.png" style="width:100%">
                         <div class="middle">
                             <a href="https://github.com/domozzzz/Isometric-Builder"><div class="text">Isometric Builder</div></a>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="imgColumn">
                         <img class="image" src="res/minesweeper.png" style="width:100%">
                         <div class="middle">
                             <a href="https://github.com/domozzzz/SimpleMineSweeper"><div class="text">Minesweeper</div></a>
@@ -118,13 +122,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column">
+                    <div class="imgColumn">
                         <img class="image" src="res/ServerClientGUI.png" style="width:100%">
                         <div class="middle">
                             <a href="https://github.com/domozzzz/Server-client-GUI"><div class="text">Server Client GUI</div></a>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="imgColumn">
                         <img class="image" src="res/demos.png" style="width:100%">
                         <div class="middle">
                             <a href="https://github.com/domozzzz/2D-Old-School-Demo-App"><div class="text">2D Old School Demo App</div></a>
@@ -133,15 +137,15 @@
                 </div>
             </div>
         </div>
-    </span>
+    </section>
 
     <footer>
         <div class="container">
             <p class="fineprint">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created by Alistair Place</span>
+                &copy; <script>document.write(new Date().getFullYear())</script> Created by Alistair Place
             </p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
