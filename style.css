@@ -158,6 +158,11 @@ li.active a:hover {
     transition: .5s ease;
     backface-visibility: hidden;
 }
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
   
 
 .text {
@@ -232,4 +237,52 @@ div:after {
 
 div:after {
     clear: both;
+}
+
+.menu-icon {
+    display: none;
+    background-color: #1c1c1c;
+}
+  
+#menu-toggle {
+    display: none;
+    float: right;
+    background-color: #1c1c1c;
+}
+
+@media screen and (max-width: 500px) {
+
+    #menu:has(input:checked) {
+        transform: scale(1, 1);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    li {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .column { 
+        float: none;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .imgColumn {
+        position: relative;
+        float: none;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--color);
+        font-size: 28px;
+        cursor: pointer;
+    }
 }
