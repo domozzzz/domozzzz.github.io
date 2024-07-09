@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js  "></script>
-
 </head>
 <body>
     <header>
@@ -90,17 +89,34 @@
         <div class="white">
             <h2>Video Gallery</h2>
             <div class="margin">
-                <div class="centered">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jtvn4D6180I?si=VHGwFUaj7pBE_Db4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zr_Q6IMUcvI?si=ucziZjkBrzqUM77Z"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                <div class="container">
+                    <div class="slideshow-container">
+
+                        <div class="slide">
+                          <iframe src="https://www.youtube.com/embed/Jtvn4D6180I?si=VHGwFUaj7pBE_Db4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          </iframe>
+                        </div>
+
+                        <div class="slide">
+                            <iframe src="https://www.youtube.com/embed/Zr_Q6IMUcvI?si=ucziZjkBrzqUM77Z"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <br>
+
+                        <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
