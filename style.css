@@ -21,7 +21,7 @@ a {
 }
 
 body {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
 }   
 
@@ -165,10 +165,9 @@ li.active a:hover {
     backface-visibility: hidden;
 }
 
-.centered {
+.center {
     display: flex;
     justify-content: center;
-    background-color: black;
 }
   
 
@@ -341,4 +340,15 @@ div:after {
   
   .active, .dot:hover {
     background-color: var(--color);
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .book {
+    width: 128px;
+    height: 200px;
+    margin: 0.5em;
   }
