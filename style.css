@@ -145,6 +145,28 @@ li.active a:hover {
     opacity: 1;
 }
 
+.imgColumn2 {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+
+.imgColumn2 .image {
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.imgColumn2:hover .image {
+    opacity: 0.3;
+}
+
+.imgColumn2:hover .middle {
+    opacity: 1;
+}
+
 .middle {
     transition: .5s ease;
     opacity: 0;
