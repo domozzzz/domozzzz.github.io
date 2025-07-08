@@ -1,11 +1,21 @@
 :root {
     --white: #ffffff;
     --black: #333333;
-    --color: #f27b26;
+    --color: #336CE7;
+    --trim:  #5ee06c;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('/fonts/GT-America-Regular.woff2') format('woff2'),
+       url('/fonts/GT-America-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: 'GT America', sans-serif;
 }
 
 * {
@@ -29,7 +39,7 @@ h1 {
     margin-top: 100px;
     font-size: 2em;
     text-align: center;
-    color: var(--color);
+    color: var(--white);
 
 }
 
@@ -48,17 +58,26 @@ h3 {
 h4 {
     font-size: 1.3em;
     text-align: center;
-    color: var(--black);
+    color: var(--white);
 }
 
-li {
+li .menu {
     float: left;
     width: 25%;
 }
 
-ul {
+ul .menu {
     padding: 0;
     list-style-type: none;
+}
+
+ul {
+    list-style-type: square;
+    color: var(--black);
+}
+
+li::marker {
+    color: var(--color);
 }
 
 iframe {
@@ -134,7 +153,7 @@ li.active a:hover {
     width: 100%;
     aspect-ratio: 1.5;
     object-fit: cover;
-    border: 1px solid #ccc;
+    border: 1px solid var(--white);
 }
 
 .imgColumn:hover .image {
@@ -178,7 +197,6 @@ li.active a:hover {
     padding: 16px 32px;
 }
   
-/* Clearfix (clear floats) */
 .row::after {
     content: "";
     clear: both;
@@ -199,18 +217,20 @@ progress::-webkit-progress-bar {
     background-color: var(--white);
 }
 
-
 progress::-webkit-progress-value {
     background-color: var(--color);
 }
 
 .margin {
-    margin: 0px 70px 90px 70px;
+    margin: 0px 70px 50px 70px;
 }
 
 .black {
     background-color: var(--black);
-    color: var(--white);
+}
+
+.black h2 {
+    color: var(--trim);
 }
 
 .white {
@@ -219,7 +239,6 @@ progress::-webkit-progress-value {
 
 .container {
     padding: 1px;
-    border: 1px;
 }
 
 .fineprint {
@@ -255,40 +274,6 @@ div:after {
     float: right;
     background-color: var(--black);
 }
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: var(--color);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
 
 @media screen and (max-width: 500px) {
 
@@ -351,5 +336,13 @@ div:after {
     width: 128px;
     height: 200px;
     margin: 0.5em;
-    flex: 0 1 auto; /* allow them to shrink */
+    flex: 0 1 auto;
   }
+
+footer p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0.5em;
+    color: var(--black);
+    background-color: var(--white);
+}
